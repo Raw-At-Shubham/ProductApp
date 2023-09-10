@@ -8,15 +8,15 @@
 <meta charset="ISO-8859-1">
 </head>
 <body>
-<div class="container mt-3">
+<div class="container">
 <div class="row">
 <div class="col-md-6 offset-md-3">
-<h1 class="text-center mb-3">
+<h1 class="text-center mb-3 ">
 Fill up Product Details
 </h1>
 <form action="handleProduct" method="post">
   <div class="form-group">
-    <label for="name">Product Name</label>
+    <label class="fw-bold" for="name">Product Name</label>
     <input type="text" 
     class="form-control" 
     id="name"  
@@ -25,7 +25,7 @@ Fill up Product Details
   </div>
   
   <div class="form-group">
-    <label for="description">Product Description</label>
+    <label class="fw-bold" for="description">Product Description</label>
     <textarea rows="5" 
     class="form-control" 
     id="description"  
@@ -34,7 +34,7 @@ Fill up Product Details
   </div>
   
   <div class="form-group">
-    <label for="price">Product Price</label>
+    <label class="fw-bold" for="price">Product Price</label>
     <input type="text" 
     class="form-control" 
     id="price"  

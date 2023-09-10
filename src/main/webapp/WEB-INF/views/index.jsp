@@ -4,12 +4,12 @@
     <%@include file="./base.jsp" %>
 <html>
 <body >
-<div class="container mt-3">
+<div class="container">
 <div class="row">
 <div class="col-md-12">
 <h1 class="text-center ">Welcome to Product App</h1>
-
-<table class="table">
+<div class="table-responsive">
+<table  class="table table-hover mt-3">
   <thead class="table-dark">
       <tr>
       <th scope="col">S.No</th>
@@ -27,7 +27,7 @@
       <td>${p.description}</td>
       <td class="fw-bold">&#x20B9; ${p.price}</td>
       <td >
-      <a href="deleteProduct/${p.id}">
+      <a href="#" onclick="deleteContact(${p.id})">
       <i 
       style="font-size:30px;"
       class="fa-sharp fa-solid fa-trash text-danger">
@@ -46,6 +46,7 @@
     </c:forEach>
   </tbody>
 </table>
+</div>
 <div class="container text-center">
 <a href="addProduct" class="btn btn-success">Add product</a>
 
@@ -60,5 +61,6 @@
 
 
 </div>
+
 </body>
 </html>

@@ -7,10 +7,24 @@
 .home::before{
 	content:"";
 	position:absolute;
-	background: url(../images/bg1.jpg)no-repeat center center/cover;
+	background: url(../images/bgjpg.jpg)no-repeat center center/cover;
 	width:100%;
 	height:100%;
 	z-index:-1;
-	opacity:0.8;
+	opacity:0.4;
+	
+}
+.form-control{
+	background-color:rgba(0,0,0,0)!important;
+	border:2px solid black;
+}
+input:focus{
+	 border:4px solid black;
+	background-color:white!important;
+}
+textarea:focus
+{
+	border:2px solid white;
+		background-color:white!important;
 	
 }
